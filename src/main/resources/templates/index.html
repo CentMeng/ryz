@@ -1,0 +1,26 @@
+<html>
+
+	<head>
+		<title>美人鱼老师大美女演示demo</title>
+		<meta charset="UTF-8"/>
+		<meta name="description" content=""/>
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no"/>
+
+		<base th:href="${#ctx.httpServletRequest.requestURL}"/>
+		<script type="text/javascript" th:src="@{/js/jquery.validate.min.js}"></script>
+		<script type="text/javascript" th:src="@{/js/edit.js}"></script>
+		<script type="text/javascript" th:src="@{/js/jquery-2.1.4.min.js}"></script>
+	</head>
+
+	<body>
+	<h3>美人鱼老师大美女演示demo</h3>
+		<h3>请在下面的输入框中键入星期英文（输入名字有惊喜）</h3>
+		<form action="" id="form" name="form">
+
+			星期英文：<input id="name" type="text" name="name" required="required" placeholder="请输入英文星期" onkeyup="showHint(this.value)"/>
+		</form>
+		<p>建议：<span id="txtHint"></span></p>
+
+	</body>
+
+</html>
